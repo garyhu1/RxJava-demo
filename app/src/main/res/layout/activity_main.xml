@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="加载"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="网络请求"/>
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/getCache"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="读取缓存"/>
+
+    <Button
+        android:id="@+id/test_static"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试静态代码块执行时机"/>
+
+    <Button
+        android:id="@+id/test_proxy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试动态代理"/>
+
+    <Button
+        android:id="@+id/test_hook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试hook的使用"/>
+
+</LinearLayout>

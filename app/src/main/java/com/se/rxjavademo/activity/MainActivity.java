@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         
         status = findViewById(R.id.status);
         hookBtn = findViewById(R.id.test_hook);
-        
+
 
         findViewById(R.id.load).setOnClickListener(v -> {
             Observable.create(new ObservableOnSubscribe<String>() {

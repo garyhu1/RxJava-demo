@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.alibaba.android.arouter.launcher.ARouter;
+import com.se.bottomlibrary.base.utils.ConstantRouter;
 import com.se.rxjavademo.R;
 import com.se.rxjavademo.api.Api;
 import com.se.rxjavademo.hook.HookOnClickListener;
@@ -227,6 +229,15 @@ public class MainActivity extends AppCompatActivity {
 
         HookClickUtil hookClickUtil = new HookClickUtil();
         hookClickUtil.hookClick(hookBtn);
+
+
+        // 跳转登录
+        findViewById(R.id.go_login).setOnClickListener(v -> {
+            ARouter.getInstance().build(ConstantRouter.BASE_LOGIN)
+//                    .withString("cityId","001")
+//                    .withString("brokerIdList","haha,haha,haha")
+                    .navigation();
+        });
     }
 
     private void hookOnClickListener(View view) {

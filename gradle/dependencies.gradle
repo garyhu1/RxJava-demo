@@ -1,0 +1,41 @@
+ext {
+    androidVersions = [
+            minSdkVersion     : 15,
+            targetSdkVersion  : 26,
+            compileSdkVersion : 26,
+            buildToolsVersion : '26.1.0'
+    ]
+
+    versions = [
+            retrofit        : '2.4.0',
+            retrofitGson    : '2.0.2',
+            rxjava          : '2.1.1',
+            rxandroid       : '2.1.1',
+            supportLib      : '26.1.0',
+            arouterApi      : '1.2.1.1',
+            arouterCompiler : '1.1.2.1'
+    ]
+
+    dependenciesList = [
+            retrofit              : "com.squareup.retrofit2:retrofit:${versions.retrofit}",
+            converterGson         : "com.squareup.retrofit2:converter-gson:${versions.retrofitGson}",
+            rxjava                : "io.reactivex.rxjava2:rxjava:${versions.rxjava}",
+            rxandroid             : "io.reactivex.rxjava2:rxandroid:${versions.rxandroid}",
+
+            arouterApi            : "com.alibaba:arouter-api:${versions.arouterApi}",
+            aRouterCompiler       : "com.alibaba:arouter-compiler:${versions.arouterCompiler}",
+
+            testRunner            : "com.android.support.test:runner:${versions.testRunner}",
+            testRules             : "com.android.support.test:rules:${versions.testRunner}",
+            testEspressoCore      : "com.android.support.test.espresso:espresso-core:${versions.espresso}",
+            testEspressoIntents   : "com.android.support.test.espresso:espresso-intents:${versions.espresso}",
+            testEspressoContrib   : "com.android.support.test.espresso:espresso-contrib:${versions.espresso}",
+
+            supportAnnotations    : "com.android.support:support-annotations:${versions.supportLib}",
+            supportAppcompatV7    : "com.android.support:appcompat-v7:${versions.supportLib}",
+            supportFragmentV4     : "com.android.support:support-fragment:${versions.supportLib}",
+            supportDesign         : "com.android.support:design:${versions.supportLib}",
+            supportRecyclerView   : "com.android.support:recyclerview-v7:${versions.supportLib}"
+    ]
+}
+

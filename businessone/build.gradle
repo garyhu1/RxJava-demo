@@ -1,4 +1,10 @@
-apply plugin: 'com.android.library'
+//apply plugin: 'com.android.library'
+
+if (IsBuildModule.toBoolean()) {
+    apply plugin: 'com.android.application'
+} else {
+    apply plugin: 'com.android.library'
+}
 
 android {
     compileSdkVersion 26
@@ -13,12 +19,28 @@ android {
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
+
     }
 
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            if (IsBuildModule.toBoolean()) {
+                manifest.srcFile 'src/main/debug/AndroidManifest.xml'
+            } else {
+                manifest.srcFile 'src/main/release/AndroidManifest.xml'
+            }
         }
     }
 
@@ -30,5 +52,11 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    androidTestCompile('com.android.support:support-annotations:26.1.0') {
+        force = true
+    }
     implementation project(':bottomlibrary')
+
+    implementation dependenciesList.arouterApi
+    annotationProcessor dependenciesList.aRouterCompiler
 }

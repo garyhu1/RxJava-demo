@@ -1,8 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.se.businessone" >
     <application>
-        <meta-data android:name="com.se.businessone.OneModuleName"
-            android:value="module_name"/>
+        <activity android:name=".ShowDetailActivity"/>
     </application>
 </manifest>
 

@@ -57,6 +57,6 @@ dependencies {
     }
     implementation project(':bottomlibrary')
 
-//    implementation dependenciesList.arouterApi
+    implementation dependenciesList.arouterApi
     annotationProcessor dependenciesList.aRouterCompiler
 }

@@ -55,7 +55,7 @@ dependencies {
         force = true
     }
     implementation project(':bottomlibrary')
-//    implementation dependenciesList.arouterApi
+    implementation dependenciesList.arouterApi
     annotationProcessor dependenciesList.aRouterCompiler
     if (!IsBuildModule.toBoolean()) {
 

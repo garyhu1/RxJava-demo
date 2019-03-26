@@ -14,12 +14,12 @@ rxJava练习
 ```
 android {
     defaultConfig {
-    ...
-    javaCompileOptions {
-        annotationProcessorOptions {
-        arguments = [ moduleName : project.getName() ]
+        ...
+        javaCompileOptions {
+            annotationProcessorOptions {
+            arguments = [ moduleName : project.getName() ]
+            }
         }
-    }
     }
 }
 
@@ -171,3 +171,6 @@ ARouter.getInstance().build("/home/main", "ap").navigation(this, 5);
 Intent intent = new Intent(getContext(),destination);
 startActivityForResult(intent,requestCode);
 ```
+
+## MVP 开发
+

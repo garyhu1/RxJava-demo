@@ -28,6 +28,7 @@ import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
 import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
 import io.reactivex.functions.Function;
 import io.reactivex.schedulers.Schedulers;
@@ -193,13 +194,13 @@ public class MainActivity extends AppCompatActivity {
         });
 
         findViewById(R.id.getCache).setOnClickListener(v -> {
-            Observable.concat(locateCache,net)
+            Observable.concat(locateCache, net)
                     .subscribeOn(Schedulers.io())
                     .observeOn(AndroidSchedulers.mainThread())
                     .subscribe(new Consumer<LocationBean>() {
                         @Override
                         public void accept(LocationBean bean) throws Exception {
-                            Log.e("garyhu"," msg :: "+ bean.getMsg());
+                            Log.e("garyhu", " msg :: " + bean.getMsg());
                         }
                     });
         });
@@ -248,6 +249,14 @@ public class MainActivity extends AppCompatActivity {
             ARouter.getInstance().build(ConstantRouter.SHOW_DETAIL)
                     .withString("name","Juddy")
                     .withInt("age",32)
+                    .navigation();
+        });
+
+        // 跳转到MVP示例模块
+        findViewById(R.id.business_two).setOnClickListener(v -> {
+            ARouter.getInstance().build(ConstantRouter.BUSINESS_TWO)
+//                    .withString("name","Juddy")
+//                    .withInt("age",32)
                     .navigation();
         });
     }

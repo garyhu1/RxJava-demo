@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/RxHook/app.iml" filepath="$PROJECT_DIR$/RxHook/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RxHook/RxHook.iml" filepath="$PROJECT_DIR$/RxHook/RxHook.iml" />
       <module fileurl="file://$PROJECT_DIR$/RxJavaDemo.iml" filepath="$PROJECT_DIR$/RxJavaDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RxHook/app.iml" filepath="$PROJECT_DIR$/RxHook/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/bottomlibrary/bottomlibrary.iml" filepath="$PROJECT_DIR$/bottomlibrary/bottomlibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/businessone/businessone.iml" filepath="$PROJECT_DIR$/businessone/businessone.iml" />
       <module fileurl="file://$PROJECT_DIR$/businesstwo/businesstwo.iml" filepath="$PROJECT_DIR$/businesstwo/businesstwo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mvplibrary/mvplibrary.iml" filepath="$PROJECT_DIR$/mvplibrary/mvplibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simplemvplibrary/simplemvplibrary.iml" filepath="$PROJECT_DIR$/simplemvplibrary/simplemvplibrary.iml" />
     </modules>
   </component>
 </project>

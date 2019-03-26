@@ -1,7 +1,0 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.se.businesstwo">
-    <application>
-        <meta-data android:name="com.se.businesstwo.TwoModuleName"
-            android:value="module_name"/>
-    </application>
-</manifest>

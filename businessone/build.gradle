@@ -7,13 +7,11 @@ if (IsBuildModule.toBoolean()) {
 }
 
 android {
-    compileSdkVersion 26
-
-
+    compileSdkVersion androidVersions.compileSdkVersion
 
     defaultConfig {
-        minSdkVersion 15
-        targetSdkVersion 26
+        minSdkVersion androidVersions.minSdkVersion
+        targetSdkVersion androidVersions.targetSdkVersion
         versionCode 1
         versionName "1.0"
 
@@ -48,13 +46,13 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation dependenciesList.supportAppcompatV7
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    androidTestCompile('com.android.support:support-annotations:26.1.0') {
-        force = true
-    }
+//    androidTestCompile('com.android.support:support-annotations:26.1.0') {
+//        force = true
+//    }
     implementation project(':bottomlibrary')
 
     implementation dependenciesList.arouterApi

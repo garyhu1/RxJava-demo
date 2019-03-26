@@ -10,4 +10,6 @@ public class ConstantRouter {
     public static final String BASE_LOGIN = "/base/login";
 
     public static final String SHOW_DETAIL = "/show/detail";
+
+    public static final String BUSINESS_TWO = "/business/two";
 }

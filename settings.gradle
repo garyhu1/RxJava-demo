@@ -1,1 +1,1 @@
-include ':RxHook', ':bottomlibrary', ':businessone', ':businesstwo'
+include ':RxHook', ':bottomlibrary', ':businessone', ':businesstwo', ':simplemvplibrary', ':mvplibrary'

@@ -30,15 +30,15 @@ android {
         }
     }
 
-//    sourceSets {
-//        main {
-//            if (IsBuildModule.toBoolean()) {
-//                Manifest.srcFile 'src/main/debug/AndroidManifest.xml'
-//            } else {
-//                Manifest.srcFile 'src/main/release/AndroidManifest.xml'
-//            }
-//        }
-//    }
+    sourceSets {
+        main {
+            if (IsBuildModule.toBoolean()) {
+                manifest.srcFile 'src/main/debug/AndroidManifest.xml'
+            } else {
+                manifest.srcFile 'src/main/release/AndroidManifest.xml'
+            }
+        }
+    }
 
 }
 

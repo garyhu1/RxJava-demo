@@ -7,7 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import com.alibaba.android.arouter.launcher.ARouter;
 
 /**
- * Created by yb on 2019/3/25.
+ * Author : garyhu
+ * Since : 2019/3/25.
  */
 
 public abstract class BaseActivity extends AppCompatActivity {

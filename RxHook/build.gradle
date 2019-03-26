@@ -58,6 +58,6 @@ dependencies {
     implementation dependenciesList.arouterApi
     annotationProcessor dependenciesList.aRouterCompiler
     if (!IsBuildModule.toBoolean()) {
-
+        implementation project(':businessone')
     }
 }

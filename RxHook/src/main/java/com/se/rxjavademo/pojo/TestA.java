@@ -3,7 +3,8 @@ package com.se.rxjavademo.pojo;
 import android.util.Log;
 
 /**
- * Created by yb on 2019/3/21.
+ * Author : garyhu
+ * Since : 2019/3/21
  */
 
 public class TestA {

@@ -1,7 +1,8 @@
 package com.se.bottomlibrary;
 
 /**
- * Created by yb on 2019/3/25.
+ * Author : garyhu
+ * Since : 2019/3/25.
  */
 
 public interface IModuleName {

@@ -1,7 +1,8 @@
 package com.se.rxjavademo.pojo;
 
 /**
- * Created by yb on 2019/3/7.
+ * Author : garyhu
+ * Since : 2019/3/7
  */
 
 public class LocationBean {

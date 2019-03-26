@@ -6,7 +6,8 @@ import com.alibaba.android.arouter.launcher.ARouter;
 import com.se.bottomlibrary.BuildConfig;
 
 /**
- * Created by yb on 2019/3/25.
+ * Author : garyhu
+ * Since : 2019/3/25.
  */
 
 public class BaseApplication extends Application {

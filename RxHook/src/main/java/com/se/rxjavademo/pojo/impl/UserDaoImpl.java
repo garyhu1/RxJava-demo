@@ -5,7 +5,8 @@ import android.util.Log;
 import com.se.rxjavademo.pojo.UserDao;
 
 /**
- * Created by yb on 2019/3/22.
+ * Author : garyhu
+ * Since : 2019/3/22
  */
 
 public class UserDaoImpl implements UserDao{

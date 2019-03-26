@@ -6,12 +6,14 @@ import android.support.annotation.Nullable;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.se.bottomlibrary.R;
 import com.se.bottomlibrary.base.activity.BaseActivity;
+import com.se.bottomlibrary.base.utils.ConstantRouter;
 
 /**
- * Created by yb on 2019/3/25.
+ * Author : garyhu
+ * Since : 2019/3/25.
  */
 
-@Route(path = "/base/login")
+@Route(path = ConstantRouter.BASE_LOGIN)
 public class LoginActivity extends BaseActivity {
 
     @Override

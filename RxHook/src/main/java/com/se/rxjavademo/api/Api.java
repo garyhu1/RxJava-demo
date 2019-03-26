@@ -6,7 +6,8 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 
 /**
- * Created by yb on 2019/3/7.
+ * Author : garyhu
+ * Since : 2019/3/7
  */
 
 public interface Api {

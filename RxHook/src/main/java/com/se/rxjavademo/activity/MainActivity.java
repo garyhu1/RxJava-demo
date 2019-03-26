@@ -37,7 +37,10 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-
+/**
+ * Author : garyhu
+ * Since : 2019/3/7
+ */
 public class MainActivity extends AppCompatActivity {
 
     private TextView status;
@@ -220,6 +223,7 @@ public class MainActivity extends AppCompatActivity {
             userDao.delete();
         });
 
+        // 钩子函数，用来处理点击事件
         hookBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -236,6 +240,14 @@ public class MainActivity extends AppCompatActivity {
             ARouter.getInstance().build(ConstantRouter.BASE_LOGIN)
 //                    .withString("cityId","001")
 //                    .withString("brokerIdList","haha,haha,haha")
+                    .navigation();
+        });
+
+        // 跳转到别的模块
+        findViewById(R.id.show_detail).setOnClickListener(v -> {
+            ARouter.getInstance().build(ConstantRouter.SHOW_DETAIL)
+                    .withString("name","Juddy")
+                    .withInt("age",32)
                     .navigation();
         });
     }

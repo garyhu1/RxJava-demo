@@ -1,7 +1,8 @@
 package com.se.rxjavademo.pojo;
 
 /**
- * Created by yb on 2019/3/22.
+ * Author : garyhu
+ * Since : 2019/3/22
  */
 
 public interface UserDao {

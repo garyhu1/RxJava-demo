@@ -6,7 +6,8 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
 /**
- * Created by yb on 2019/3/22.
+ * Author : garyhu
+ * Since : 2019/3/22
  */
 
 public class MyInvocationHandler implements InvocationHandler {

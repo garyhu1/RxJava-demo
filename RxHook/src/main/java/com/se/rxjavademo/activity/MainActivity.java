@@ -252,12 +252,24 @@ public class MainActivity extends AppCompatActivity {
                     .navigation();
         });
 
-        // 跳转到MVP示例模块
+        // 跳转到MVP示例模块1
         findViewById(R.id.business_two).setOnClickListener(v -> {
             ARouter.getInstance().build(ConstantRouter.BUSINESS_TWO)
 //                    .withString("name","Juddy")
 //                    .withInt("age",32)
                     .navigation();
+        });
+
+        // 跳转到MVP示例模块2
+        findViewById(R.id.mvp_demo).setOnClickListener(v -> {
+            ARouter.getInstance().build(ConstantRouter.MVP_DEMO)
+//                    .withString("name","Juddy")
+//                    .withInt("age",32)
+                    .navigation();
+        });
+
+        findViewById(R.id.my_txt).setOnClickListener(v -> {
+            Log.e("garyhu","点击事件");
         });
     }
 

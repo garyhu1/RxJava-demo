@@ -12,4 +12,6 @@ public class ConstantRouter {
     public static final String SHOW_DETAIL = "/show/detail";
 
     public static final String BUSINESS_TWO = "/business/two";
+
+    public static final String MVP_DEMO = "/mvp/demo";
 }

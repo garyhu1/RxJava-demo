@@ -67,6 +67,24 @@
         android:id="@+id/business_two"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="mvp示例"/>
+        android:text="mvp示例1"/>
+
+    <Button
+        android:id="@+id/mvp_demo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mvp示例2"/>
+
+    <com.se.rxjavademo.widget.MyRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp">
+        <com.se.rxjavademo.widget.MyTextView
+            android:id="@+id/my_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="自定义的文本"/>
+    </com.se.rxjavademo.widget.MyRelativeLayout>
 
 </LinearLayout>

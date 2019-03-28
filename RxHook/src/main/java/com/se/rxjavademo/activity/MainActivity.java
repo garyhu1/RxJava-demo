@@ -1,5 +1,6 @@
 package com.se.rxjavademo.activity;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,6 +13,7 @@ import com.alibaba.android.arouter.launcher.ARouter;
 import com.se.bottomlibrary.base.utils.ConstantRouter;
 import com.se.rxjavademo.R;
 import com.se.rxjavademo.api.Api;
+import com.se.rxjavademo.hook.HookHelper;
 import com.se.rxjavademo.hook.HookOnClickListener;
 import com.se.rxjavademo.pojo.LocationBean;
 import com.se.rxjavademo.pojo.TestA;
@@ -271,6 +273,13 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.my_txt).setOnClickListener(v -> {
             Log.e("garyhu","点击事件");
         });
+
+        findViewById(R.id.plugin_demo).setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this,TargetActivity.class);
+            Log.e("garayhu","Main = "+intent.getComponent());
+            startActivity(intent);
+        });
+
     }
 
     private void hookOnClickListener(View view) {
